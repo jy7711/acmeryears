@@ -1,0 +1,1 @@
+{"name":"Local: B","url":"c:\\Users\\jiang\\Desktop\\编\\cf\\contest\\1082div2\\B.cpp","tests":[{"id":1771858328071,"input":"4\n5\nababa\n5\nbaaba\n5\n?b?ab\n6\naa?b?b\n","output":"YES\nNO\nYES\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jiang\\Desktop\\编\\cf\\contest\\1082div2\\B.cpp","group":"local","local":true}

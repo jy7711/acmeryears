@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"c:\\Users\\jiang\\Desktop\\编\\cf\\contest\\ECR184div2\\C.cpp","tests":[{"id":1764844866928,"input":"3\n1 100\n1\n27\n3 10\n5 6 5\n7 1 7\n5 42\n5 4 2 2 1\n9 8 9 8 100\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jiang\\Desktop\\编\\cf\\contest\\ECR184div2\\C.cpp","group":"local","local":true}
