@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"c:\\Users\\hfuu\\Desktop\\acmeryears.7\\abc\\abc444\\C.cpp","tests":[{"id":1773391616617,"input":"3\n4 4 4\n","output":""},{"id":1773391779829,"input":"6\n10 187 344 100 434 257\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hfuu\\Desktop\\acmeryears.7\\abc\\abc444\\C.cpp","group":"local","local":true}
