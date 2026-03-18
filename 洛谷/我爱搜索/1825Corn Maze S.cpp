@@ -17,7 +17,7 @@ int main()
         for (int j = 1; j <= m; j++) {
             cin >> a[i][j];
             if (a[i][j] == '#') vis[i][j] = 1;
-            else if (a[i][j] == '@') q.push({0,{i,j}});
+            else if (a[i][j] == '@') vis[i][j] = 1, q.push({0,{i,j}});
             else if (a[i][j] == '.') ;
             else if (a[i][j] == '=') ex = i, ey = j;
             else {
@@ -29,25 +29,23 @@ int main()
     while (!q.empty()) {
         int cnt = q.front().first;
         auto[x, y] = q.front().second;
-        cout << cnt << ' ' << x << ' ' << y << '\n';
+        //cout << cnt << ' ' << x << ' ' << y << '\n';
         q.pop();
-        if (vis[x][y]) continue;
         if (a[x][y] == '=') {
             cout << cnt << '\n';
             return 0;
         }
         if (mpx.count(a[x][y])) {
-            int nx = x, ny = y;
-            nx = mp[{x,y}].first, ny = mp[{x,y}].second;
-            x = nx, y = ny; 
+            auto [nx, ny] = mp[{x,y}];
+            x = nx, y = ny;
         }
         for (int i = 0; i < 4; i++) {
             int nx = dx[i] + x;
             int ny = dy[i] + y;
             if (nx < 1 || nx > n || ny < 1 || ny > m || vis[nx][ny] || a[nx][ny] == '#') continue;
+            vis[nx][ny] = 1;
             q.push({cnt+1,{nx,ny}});
         }
-        vis[x][y] = 1;
     }
     return 0;
 }
