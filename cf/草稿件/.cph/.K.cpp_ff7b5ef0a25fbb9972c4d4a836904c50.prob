@@ -1,0 +1,1 @@
+{"name":"Local: K","url":"c:\\Users\\hfuu\\Desktop\\acmeryears.7\\cf\\草稿件\\K.cpp","tests":[{"id":1774186079717,"input":"2\n105 38\n1 114\n","output":"4 2 1 3 4 2\n1 0 114\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hfuu\\Desktop\\acmeryears.7\\cf\\草稿件\\K.cpp","group":"local","local":true}
