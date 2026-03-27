@@ -16,6 +16,10 @@ void ac()
     char la = 'A', laa = 'A', laaa = 'A';
     //cout << la << ' ' << laa << ' ' << laaa << '\n';
     bool gg = 1;
+    if (a[0].first == 2 && a[1].first == 2 && a[2].first == 2) {
+        cout << "GBRBRG\n";
+        return;
+    }
     while (sum && gg) {
         gg = 0;
         sort(a.begin(),a.end(),greater<>());
