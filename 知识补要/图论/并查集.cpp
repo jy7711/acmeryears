@@ -25,6 +25,11 @@ void unite(int x, int y)
     if (sz[x] < sz[y]) swap(x, y);
     fa[y] = x;
     sz[x] += sz[y];
+
+    //简单的写法应该是
+    //x = find(x), y = find(y);
+    //if (x == y) return;
+    //fa[x] = y; 
     return;
 }
 
