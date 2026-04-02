@@ -7,9 +7,6 @@ const int mod = 998244353;
 int fa[N];
 struct jy {
     ll u, v, w;
-    friend bool operator < (jy j, jy y) {
-        return j.w > y.w;
-    }
 } a[N];    
 
 ll qk(ll a, ll b) 
@@ -37,18 +34,18 @@ int main()
 {
     ios::sync_with_stdio(false), cin.tie(0);
     cin >> n >> m;
-    init(); 
+    init();  cnt = n;
     for (int i = 1; i <= m; i++) {
         cin >> a[i].u >> a[i].v;
         a[i].w = qk(2, i);
     }
-    sort(a+1, a+1+m);
-    for (int i = 1; i <= m; i++) {
-        if (cnt >= n-2) break;
+
+    for (int i = m; i >= 1; i--) {
+        if (cnt <= 2) break;
         int x = a[i].u, y = a[i].v;
         x = find(x), y = find(y);
         if (x == y) continue;
-        fa[x] = y; cnt++;  
+        fa[x] = y; cnt--;  
     }
     
     for (int i = 1; i <= m; i++) {
