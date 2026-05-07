@@ -14,17 +14,18 @@ void ac()
             ll dy = abs(y[i]-y[j]);
             ll dz = abs(z[i]-z[j]);
             if (dx*dx + dy*dy + dz*dz) mp[dx*dx + dy*dy + dz*dz]++;
-            if (mp[dx*dx + dy*dy + dz*dz] == 12) gg1 = 1;
-            if (mp[dx*dx + dy*dy + dz*dz] == 8) gg21 = 1;
-            if (mp[dx*dx + dy*dy + dz*dz] == 4) cnt++;
         }
     }
-    gg22 = cnt == 2;
-    if (!gg1 && (!gg21 || !gg22)) {
-        cout << "NO\n";
-        return;
-    } 
-    cout << "YES\n";
+    ll aa = 1e18, bb = -1, cc = -1;
+    for (auto[x, y] : mp) {
+        if (y == 12) aa = min(aa, x), bb = max(bb, x);
+        else if (y == 4) cc = x;  
+    }
+    
+    if (bb == aa*2 && cc == aa*3) {
+        cout << "YES\n";
+    }
+    else cout << "NO\n";
     return;
 }
 int main()
