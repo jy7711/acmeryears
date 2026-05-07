@@ -14,7 +14,7 @@ int main()
         cin >> b[i];
         s2 += b[i];
     }
-    if (s1 > s2) {
+    if (s1 >= s2) {
         cout << "Blue\n";
     }
     else cout << "Red\n";

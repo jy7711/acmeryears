@@ -4,7 +4,7 @@ using ll = long long;
 int main()
 {
     ios::sync_with_stdio(false), cin.tie(0);
-    ll n; cin >> n;
-    cout << "0\n";
+    string s; cin >> s;
+    cout << (s.size() > 5 ? "NO\n" : "YES\n");
     return 0;
 }
