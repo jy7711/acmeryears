@@ -5,6 +5,6 @@ int main()
 {
     ios::sync_with_stdio(false), cin.tie(0);
     string s; cin >> s;
-    cout << (s.size() > 5 ? "NO\n" : "YES\n");
+    cout << (s.size() > 5 ? "No\n" : "Yes\n");
     return 0;
 }
